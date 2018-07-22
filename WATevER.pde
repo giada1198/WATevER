@@ -122,7 +122,8 @@ void draw(){
   // }
 }
 
-void keyPressed() { 
+void keyPressed()
+{ 
   if(keyCode == UP && state == "waiting") // Cup Detection
   {
     // isCupCountdown = 10;
@@ -142,7 +143,8 @@ void keyPressed() {
   }
 }
 
-void drawWheel() {
+void drawWheel()
+{
   pushMatrix();
   translate(960, 1080.5);
   if(state == "spinning")
@@ -172,7 +174,8 @@ void drawWaterFlowPercentage()
 }
 
 
-void checkIsCup() { 
+void checkIsCup()
+{ 
   if(isCupCountdown > 0)
   {
     isCupCountdown -= 1;
@@ -238,7 +241,8 @@ void waterFlowStart()
   // if(isTramontana) t.setRelayEmbeddedOn(1);
 }
 
-void reset() {
+void reset()
+{
   // Reset Wheel Degree
   wheelDegree = 0; 
   wheelDegreeNow = 0;
